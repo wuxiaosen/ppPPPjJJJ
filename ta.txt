@@ -1,0 +1,54 @@
+wxis_copy
+git grep 是通过直接读取本地的 Git 仓库来进行搜索的，它并不依赖于外部的搜索引擎或数据库。Git 仓库本身就是一个版本控制系统，它存储了项目的每一个版本，以及每个版本中所有文件的快照。因此，git grep 在执行搜索时，实际上是在 Git 仓库的历史快照中查找匹配的文本。
+
+Git 仓库的数据存储方式是通过对象数据库。Git 使用对象（Object）来表示文件、目录、提交历史等。这些对象以二进制格式存储在仓库的 .git 目录下的 objects 文件夹中。其中，每个对象都有一个唯一的 SHA-1 标识符，用于标识和检索。对象数据库包含了提交对象、树对象、Blob 对象等。
+
+具体来说，Git 仓库中存储的文本内容是以 Blob（Binary Large Object）对象的形式存储的。Blob 对象存储了文件的内容，而树对象则存储了文件和目录的结构。提交对象则包含了一系列的树对象和元数据，形成了版本历史。
+
+当你运行 git grep 时，Git 会直接在这些对象中搜索匹配的文本。这种存储方式使得 Git 具有高效的查找和检索能力，因为它可以直接在本地的对象数据库中操作，而无需依赖外部服务。
+
+User
+//grep.app searches code from over a half million public repositories on GitHub.  We’re hoping to add more soon…
+
+It searches for the exact string you enter, including any punctuation or other characters.  You can also search by regular expression, using the RE2 syntax.
+ChatGPT
+The provided information is about grep.app, a code search tool that allows users to search code from over half a million public repositories on GitHub. Here are some key points:
+
+Scope of Search:
+
+grep.app searches through a vast collection of public repositories on GitHub.
+String Matching:
+
+The search tool looks for the exact string you enter. This includes considering any punctuation or other characters as part of the search.
+Regular Expression Support:
+
+Users have the option to perform searches using regular expressions, and the syntax used for regular expressions is RE2.
+RE2 is a regular expression library that supports a subset of regular expression syntax while avoiding some of the performance pitfalls associated with certain complex regular expressions. It is designed to be efficient and safe for use in environments where untrusted input may be provided.
+
+If you have specific queries or need assistance with using grep.app or regular expressions in code searching, feel free to ask!
+
+
+
+
+User
+wxs_翻译
+ChatGPT
+提供的信息涉及到 grep.app，这是一个代码搜索工具，允许用户从 GitHub 上的超过半百万公共存储库中搜索代码。以下是一些关键信息：
+
+搜索范围：
+
+grep.app 通过 GitHub 上的大量公共存储库进行搜索。
+字符串匹配：
+
+该搜索工具查找您输入的确切字符串，包括考虑任何标点符号或其他字符作为搜索的一部分。
+支持正则表达式：
+
+用户可以使用正则表达式进行搜索，而使用的正则表达式语法是 RE2。
+RE2 是一个正则表达式库，支持正则表达式语法的子集，同时避免了与某些复杂正则表达式相关的性能问题。它旨在在可能提供不受信任输入的环境中既高效又安全地使用。
+
+wxs如果您对使用 grep.app 或在代码搜索中使用正则表达式有特定的问题或需要帮助，请随时提问！
+
+
+
+
+
