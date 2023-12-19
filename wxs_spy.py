@@ -49,7 +49,7 @@ safe_t = (Number,)
 
 #: Set types.
 set_t = (frozenset, set)
-
+LIT_DICT_START_wxs = _literal('{', False, +1)
 LIT_DICT_START = _literal('{', False, +1)
 LIT_DICT_KVSEP = _literal(': ', True, 0)
 LIT_DICT_END = _literal('}', False, -1)
