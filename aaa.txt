@@ -1,5 +1,6 @@
 Toggle Description subsection
 Location-based approaches
+dert5999
 CAS and FCS
 In distributed computing
 Content-addressable networks
@@ -12,7 +13,7 @@ See also
 References
 External links
 Content-addressable storage
-
+12568146
 Articlewxs
 Talk
 Read
