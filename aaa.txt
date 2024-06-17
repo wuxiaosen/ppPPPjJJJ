@@ -1,3 +1,5 @@
+iii
+
 Toggle Description subsection
 Location-based approaches
 CAS and FCS
@@ -13,12 +15,14 @@ References
 External links
 Content-addressable storage
 
+ii
 Articlewxs
 Talk
 Read
 Edit
 View historywxsss
 
+ioge+1
 Toolswxs
 From Wikipedia, the free encyclopedia
 Content-addressable storage (CAS), also referred to as content-addressed storage or fixed-content storage, is a way to store information so it can be retrieved based on its content, not its name or location. It has been used for high-speed storage and retrieval of fixed content, such as documents stored for compliance with government regulations[citation needed]. Content-addressable storage is similar to content-addressable memory.
